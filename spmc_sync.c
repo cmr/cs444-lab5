@@ -11,6 +11,10 @@
     Of course, this is trivially correct: it is impossible to have data races
     because it's impossible to have two references to the queue.
 
+    I have introduced and implemented separately an spmc_moal_t type. This
+    keeps the synchronization code nice and encapsulated. It is used here.
+    spmc stands for single-producer, multiple-consumer.
+
 Name: Corey Richardson
 
 Clarkson University  SP2014
